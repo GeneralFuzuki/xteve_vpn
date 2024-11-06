@@ -1,3 +1,5 @@
+Updated fork using SenexCrenshaw version of Xteve (additional features and option to cache in RAM rather than disk)
+
 xteve
 xteve, in docker with ovpn
 
@@ -27,4 +29,4 @@ xteve - iptv and epg proxy server for plex, emby, etc ... thanks to @marmei
 website: http://xteve.de
 Discord: https://discordapp.com/channels/465222357754314767/465222357754314773
 
-so, credits to the programmers, i just putted this together in a docker to fit my needs
+so, credits to the programmers, i just put this together in a docker to fit my needs
