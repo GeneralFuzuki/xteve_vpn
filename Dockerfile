@@ -3,7 +3,7 @@ RUN apk update
 RUN apk upgrade
 RUN apk add --no-cache ca-certificates openvpn runit tzdata bash busybox-suid su-exec
 
-MAINTAINER alturismo alturismo@gmail.com
+MAINTAINER GeneralFuzuki genfuzuki@outlook.com
 
 # Timezone (TZ)
 ENV TZ=Europe/Berlin
@@ -27,7 +27,7 @@ COPY logindata.conf /
 COPY startups /startups
 
 # Add xTeve and guide2go
-RUN wget https://github.com/xteve-project/xTeVe-Downloads/raw/master/xteve_linux_amd64.zip -O temp.zip; unzip temp.zip -d /usr/bin/; rm temp.zip
+RUN wget https://github.com/SenexCrenshaw/xTeVe/releases/download/v2.5.3/xteve-v2.5.3-linux-amd64.tar.gz tar -xf xteve-v2.5.3-linux-amd64.tar.gz -C /usr/bin
 RUN chmod +x /usr/bin/xteve
 
 RUN find /startups -name run | xargs chmod u+x
